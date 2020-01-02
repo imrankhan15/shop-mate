@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -34,21 +34,21 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily POS &amp; Contacts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zVW-jA-4aN">
-                                <rect key="frame" x="64.333333333333314" y="350" width="285.33333333333337" height="36"/>
+                                <rect key="frame" x="66.666666666666657" y="350" width="280.66666666666674" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="8aL-fb-LO2">
                                         <variation key="heightClass=regular-widthClass=regular" constant="77"/>
                                     </constraint>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="32"/>
-                                <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" type="system" weight="thin" pointSize="70"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shop-Mate POS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fN2-sa-pBy">
-                                <rect key="frame" x="98.333333333333314" y="221" width="217.33333333333337" height="38.333333333333314"/>
+                                <rect key="frame" x="100" y="221" width="214" height="38.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -57,7 +57,7 @@
                                 </variation>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.95705244140000001" blue="0.68253051679999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.95686274509803915" blue="0.68235294117647061" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="zVW-jA-4aN" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="7l6-U7-YDM"/>
                             <constraint firstItem="7eh-1Y-9Zq" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="48" id="8Lw-8s-HVW"/>

@@ -8,24 +8,23 @@
 
 import UIKit
 import os.log
-import GoogleMobileAds
+
 
 
 class StaffsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet var tableView: UITableView!
     
-    @IBOutlet weak var bannerView: GADBannerView!
+    @IBOutlet weak var submitButton: UIButton!
+    
    
     var staffs = [Staff]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        bannerView.adUnitID = "ca-app-pub-4598488303993049/2689091688"
-        bannerView.rootViewController = self
-        bannerView.load(GADRequest())
-        
+       
+        submitButton.layer.cornerRadius = 5.0
         navigationItem.leftBarButtonItem = editButtonItem
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Edit", style: .plain, target: self, action: #selector(StaffsViewController.editButtonPressed))
         

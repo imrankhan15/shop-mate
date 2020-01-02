@@ -1,6 +1,0 @@
-framework module Pods_ShopkeepersMate {
-  umbrella header "Pods-ShopkeepersMate-umbrella.h"
-
-  export *
-  module * { export * }
-}

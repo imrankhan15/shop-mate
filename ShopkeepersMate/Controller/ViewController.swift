@@ -7,17 +7,25 @@
 //
 
 import UIKit
-import GoogleMobileAds
+
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var bannerView: GADBannerView!
-  
+   
+    @IBOutlet weak var customerButton: UIButton!
+    
+    @IBOutlet weak var supplierButton: UIButton!
+    @IBOutlet weak var staffButton: UIButton!
+    @IBOutlet weak var pointOfSaleButton: UIButton!
+    @IBOutlet weak var oldRecordsButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        bannerView.adUnitID = "ca-app-pub-4598488303993049/2689091688"
-        bannerView.rootViewController = self
-        bannerView.load(GADRequest())
+       customerButton.layer.cornerRadius = 5.0
+        supplierButton.layer.cornerRadius = 5.0
+        staffButton.layer.cornerRadius = 5.0
+        pointOfSaleButton.layer.cornerRadius = 5.0
+        oldRecordsButton.layer.cornerRadius = 5.0
+        
     }
 
     override func didReceiveMemoryWarning() {

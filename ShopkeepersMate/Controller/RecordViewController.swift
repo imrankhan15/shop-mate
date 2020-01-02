@@ -8,7 +8,7 @@
 
 import UIKit
 import os.log
-import GoogleMobileAds
+
 
 class RecordViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -16,14 +16,12 @@ class RecordViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     @IBOutlet var tableView: UITableView!
    
-    @IBOutlet weak var bannerView: GADBannerView!
+  
   
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        bannerView.adUnitID = "ca-app-pub-4598488303993049/2689091688"
-        bannerView.rootViewController = self
-        bannerView.load(GADRequest())
+        
         navigationItem.rightBarButtonItem = editButtonItem
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Edit", style: .plain, target: self, action: #selector(RecordViewController.editButtonPressed))
         

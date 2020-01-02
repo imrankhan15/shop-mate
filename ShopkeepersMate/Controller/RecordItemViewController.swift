@@ -7,12 +7,12 @@
 //
 
 import UIKit
-import GoogleMobileAds
+
 
 
 class RecordItemViewController: UIViewController {
 
-    @IBOutlet weak var bannerView: GADBannerView!
+   
     @IBOutlet weak var date: UILabel!
     
     @IBOutlet weak var startingAmountLabel: UILabel!
@@ -35,9 +35,7 @@ class RecordItemViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        bannerView.adUnitID = "ca-app-pub-4598488303993049/2689091688"
-        bannerView.rootViewController = self
-        bannerView.load(GADRequest())
+      
         
         date.text =  dateTime!
         

@@ -8,7 +8,7 @@
 
 import UIKit
 import os.log
-import GoogleMobileAds
+
 
 
 class StaffReportDetailViewController: UIViewController, UITextFieldDelegate, UINavigationControllerDelegate {
@@ -21,14 +21,12 @@ class StaffReportDetailViewController: UIViewController, UITextFieldDelegate, UI
     
     @IBOutlet weak var saveButton: UIBarButtonItem!
     
-    @IBOutlet weak var bannerView: GADBannerView!
+ 
    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        bannerView.adUnitID = "ca-app-pub-4598488303993049/2689091688"
-        bannerView.rootViewController = self
-        bannerView.load(GADRequest())
+       
         
         statusTextField.delegate = self
         statusTextField.autocorrectionType = .no

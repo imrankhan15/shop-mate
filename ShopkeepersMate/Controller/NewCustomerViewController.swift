@@ -8,11 +8,11 @@
 
 import UIKit
 import os.log
-import GoogleMobileAds
+
 
 class NewCustomerViewController: UIViewController, UITextFieldDelegate, UINavigationControllerDelegate{
 
-    @IBOutlet weak var bannerView: GADBannerView!
+
     @IBOutlet weak var customerNameTextField: UITextField!
     
     @IBOutlet weak var customerMobileTextField: UITextField!
@@ -23,9 +23,7 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, UINaviga
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        bannerView.adUnitID = "ca-app-pub-4598488303993049/2689091688"
-        bannerView.rootViewController = self
-        bannerView.load(GADRequest())
+     
         
         customerNameTextField.delegate = self
         customerMobileTextField.delegate = self

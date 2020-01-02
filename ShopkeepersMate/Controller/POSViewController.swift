@@ -8,7 +8,7 @@
 
 import UIKit
 import os.log
-import GoogleMobileAds
+
 
 class POSViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate, UINavigationControllerDelegate  {
 
@@ -19,9 +19,12 @@ class POSViewController: UIViewController, UITableViewDelegate, UITableViewDataS
 
     @IBOutlet weak var unit: UITextField!
     
+    @IBOutlet weak var newBuyButton: UIButton!
     
+    @IBOutlet weak var newSaleButton: UIButton!
     
-    @IBOutlet weak var bannerView: GADBannerView!
+    @IBOutlet weak var otherCostButton: UIButton!
+    
     @IBOutlet var tableView: UITableView!
     
     var records = [Record]()
@@ -38,10 +41,11 @@ class POSViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        bannerView.adUnitID = "ca-app-pub-4598488303993049/2689091688"
-        bannerView.rootViewController = self
-        bannerView.load(GADRequest())
-        
+       
+        saveButton.layer.cornerRadius = 5.0
+        newBuyButton.layer.cornerRadius = 5.0
+        newSaleButton.layer.cornerRadius = 5.0
+        otherCostButton.layer.cornerRadius = 5.0
         startingAmountTextField.delegate = self
         unit.delegate = self
         
