@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2000px-Shop.svg.png" translatesAutoresizingMaskIntoConstraints="NO" id="7eh-1Y-9Zq">
+                                <rect key="frame" x="87" y="68" width="240" height="128"/>
+                                <color key="backgroundColor" red="1" green="0.95705244140000001" blue="0.68253051679999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="2qB-tT-eId">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="340"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="128" id="qHc-yJ-fN2">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                                    </constraint>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily POS &amp; Contacts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zVW-jA-4aN">
+                                <rect key="frame" x="66.666666666666657" y="350" width="280.66666666666674" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="8aL-fb-LO2">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="77"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="32"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="70"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shop-Mate POS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fN2-sa-pBy">
+                                <rect key="frame" x="100" y="221" width="214" height="38.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="52"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.95686274509803915" blue="0.68235294117647061" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zVW-jA-4aN" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="7l6-U7-YDM"/>
+                            <constraint firstItem="7eh-1Y-9Zq" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="48" id="8Lw-8s-HVW"/>
+                            <constraint firstItem="fN2-sa-pBy" firstAttribute="top" secondItem="7eh-1Y-9Zq" secondAttribute="bottom" constant="25" id="HRD-MM-pJ2">
+                                <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                            </constraint>
+                            <constraint firstItem="fN2-sa-pBy" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="UT4-CQ-B5K"/>
+                            <constraint firstItem="7eh-1Y-9Zq" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="gVf-8l-E2O"/>
+                            <constraint firstItem="zVW-jA-4aN" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="zoF-Yx-sjk"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="2000px-Shop.svg.png" width="1024" height="1024"/>
+    </resources>
+</document>
